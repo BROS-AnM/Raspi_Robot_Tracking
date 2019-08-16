@@ -1,7 +1,5 @@
-# Robot_Tracking
-Hi all,
-
-This is a Raspberry Pi project looked at tracking the position and orientation of a robot (or anything you want really) that is 
+# Raspberry Pi Robot Tracking
+Raspberry Pi project for tracking the position and orientation of a robot (or anything you want really) that is 
 confined on a platform. It uses a green reference ball placed as you origin (x,y) psoition, and a red and blue ball for right and 
 left respectively. A Raspberry Pi and camera are positioned above the platform with the camera facing vertically down perpendicular 
 to the platform.
@@ -11,7 +9,20 @@ The programs are broken into 2 classes and a main. Classes are:
 green, red, and blue balls.
 - Client: Sets up a TCP client and sends data to the TCP Host (basic of the basics).
 
-The main program just runs to get the position and orientation data and transfer it to the TCP Host. It is a continual loop and needs to be manually stopped.
+The main program just runs to get the position and orientation data and transfer it to the TCP Host. It is a continual loop and 
+needs to be manually stopped.
+
+Required packages:
+- picamera
+- collections
+- numpy
+- time
+- cv2
+- imutils
+- os
+- sys
+- socket
+- time
 
 User Specific Notes:
 - The tracking class identifies contours, there is a chance that the balls you use may be too small, if this is the case 
