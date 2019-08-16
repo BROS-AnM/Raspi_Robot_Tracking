@@ -12,7 +12,7 @@ green, red, and blue balls.
 The main program just runs to get the position and orientation data and transfer it to the TCP Host. It is a continual loop and 
 needs to be manually stopped.
 
-Required packages:
+Required libraries:
 - picamera
 - collections
 - numpy
