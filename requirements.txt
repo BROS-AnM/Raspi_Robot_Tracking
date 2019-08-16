@@ -1,0 +1,13 @@
+#
+####### Requirements #######
+#
+picamera
+collections
+numpy
+time
+cv2
+imutils
+os
+sys
+socket
+time
